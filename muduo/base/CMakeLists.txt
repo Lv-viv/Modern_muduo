@@ -10,6 +10,7 @@ set(base_SRC
     Thread.cpp
     Condition.cpp
     ProcessInfo.cpp
+    CountDownLatch.cpp
     )
 
 add_library(muduo_base ${base_SRC})

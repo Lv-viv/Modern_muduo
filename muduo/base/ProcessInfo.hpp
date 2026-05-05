@@ -4,6 +4,7 @@
 #include "muduo/base/StringPiech.hpp"
 #include "muduo/base/Types.hpp"
 #include "muduo/base/Timestamp.hpp"
+#include "muduo/base/Atomic.hpp"
 
 #include <string_view>
 #include <vector>

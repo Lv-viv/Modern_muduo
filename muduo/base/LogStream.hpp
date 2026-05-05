@@ -4,6 +4,7 @@
 #include "muduo/base/noncopyable.hpp"
 #include "muduo/base/Types.hpp"
 #include "muduo/base/StringPiech.hpp"
+#include "muduo/base/Util.hpp"
 
 #include <string.h>
 #include <assert.h>
@@ -224,8 +225,7 @@ inline void LogStream::formatInteger(T value)
 }
 
 
-template<typename T>
-concept ArithmeticType = std::is_arithmetic_v<T>;
+
 
 class Fmt
 {

@@ -1,4 +1,4 @@
-#include "ProcessInfo.hpp"
+#include "muduo/base/ProcessInfo.hpp"
 #include "muduo/base/FileUtil.hpp"
 #include "muduo/base/CurrentThread.hpp"
 
@@ -243,8 +243,8 @@ std::vector<pid_t> threads()
     t_pids = &result;
     scanDir("/proc/self/task", taskDirFilter);
     t_pids = nullptr;
-
-    std::ranges::sort(result);
+    //std::ranges::sort(result);
+    std::sort(result.begin(), result.end());
 
     return result;
 }
